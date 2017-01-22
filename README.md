@@ -6,12 +6,19 @@ RSA private key's struct like this:
 typedef struct __RSAPrivateKey
 {
 	char modulus[512 + 1];
+	
 	char publicExponent[16 + 1];
+	
 	char privateExponent[512 + 1];
+	
 	char prime1[512 + 1];
+	
 	char prime2[512 + 1];
+	
 	char exponent1[512 + 1];
+	
 	char exponent2[512 + 1];
+	
 	char coefficient[512 + 1];
 } STRSAPrivateKey;
 
